@@ -58,6 +58,9 @@ npm run preview
 - The statuses and fallback department/title values are demo presentation data, not verified employment records.
 - This project has no authentication.
 
-## Portfolio notes
+## Next Improvements
 
-Before presenting this project, run it locally, test the main flows, and customise at least a few design or implementation choices. Be ready to explain the component structure, data flow, filtering/sorting logic, error states, testing approach, and current limitations.
+- **Component tests.** Current tests cover filtering, sorting and name formatting. Next: React Testing Library tests for the employee form (validation messages) and for the loading, error and empty states.
+- **Authentication and roles.** A real employee tool needs sign-in and permissions before it should handle any real data.
+- **Persist changes.** Add/edit currently live only in the browser session. Next step: save them to `localStorage`, then to a small backend API.
+- **Accessibility audit.** table semantics for sortable columns, keyboard navigation, focus management in the forms, and colour contrast.
